@@ -1,0 +1,471 @@
+{
+  "0xb6cfeab83614da04c03db0fb8a6787a45d0be8d576fcc6f8f457a5a816d22ab3": {
+    "contracts": {
+      "0x497a1ea52e3999d72d05e1b5122ebc83f459e28ad3f87808642fc672a1b7204e": {
+        "name": "IdentityManager",
+        "address": "0x1000000000000000000000000000000000001234"
+      },
+      "0x2c01206c45d243c0d3ea31a024bf75acacae185620cf51e209bd587af7e730de": {
+        "name": "ForusVendor",
+        "address": "0x200"
+      },
+      "0x234f19183b297348f9d06b71ead49a6289bd8813722cff5855cbf7fd4439d9ec": {
+        "name": "ForusVendor",
+        "address": "0x200"
+      },
+      "0x68faced7a7a5ef497fad44782259609a755d26a623ced1cafd488c54eaabe898": {
+        "name": "ForusVendor",
+        "address": "0x2000000000000000000000000000000000000000"
+      },
+      "0x051f871c42a1470aa68dfbe4ef48ba05309efe954580cf3fd0b66249877c822c": {
+        "name": "ForusVendor",
+        "address": "0x3ff51120D34f4318B6aff85DbCa5481DbF03f40B"
+      },
+      "0x12d62b2295b91d858c1290139a44025b420f5831dc556077c075d6c1f8a5c6f1": {
+        "name": "ForusVendor",
+        "address": "0xd671628f36e4d560E809Eb12Aa380faE948D9Ed2"
+      },
+      "0x70ad2a003fb4a0f7fa4f2d7814b85df76886cdcf49f131da8ba3d355fac636ce": {
+        "name": "ForusVendor",
+        "address": "0x3ff51120D34f4318B6aff85DbCa5481DbF03f40B"
+      },
+      "0x83668bbabb4de5751b9753a9617125e243243bc4d048242234fb82b3b9d6b9f7": {
+        "name": "IdentityManager",
+        "address": "0x1000000000000000000000000000000000001234"
+      },
+      "0x6f13cf15f33f32b237bc81b848249ff012c4b30a1e1964c55b56047d1f145648": {
+        "name": "ForusVendor",
+        "address": "0x3ff51120D34f4318B6aff85DbCa5481DbF03f40B"
+      },
+      "0xbe26f5dd4046fd28bdc56dbb2b1e90f3a682bb00ab68b58f4a7ee2913ee01862": {
+        "name": "IdentityManager",
+        "address": "0x99eabe5cffce097170f367d69498e53623dd427e"
+      },
+      "0xb4bc1abd5265a58989ab683315fb08074ac40bccfb7606e28b9a2980923fea66": {
+        "name": "ForusVendor",
+        "address": "0x3ff51120D34f4318B6aff85DbCa5481DbF03f40B"
+      },
+      "0x0574f809b3612eb55eecadfd5d022ff77af2d5b13371791fa7acb01789f46a28": {
+        "name": "ForusVendor",
+        "address": "0x7b52d6b23a690518449907cf11fb3c11633e5445"
+      },
+      "0x7e9616a4ef117934f4eacfb6c6e6b21c78c54379d551e9cf5171c5d3b75db918": {
+        "name": "ForusVendor",
+        "address": "0x7b52d6b23a690518449907cf11fb3c11633e5445"
+      },
+      "0x125df919ce3c171ff1d5ee8d2fb5519cb2df42e11227e59aa2915802dd4d9f5e": {
+        "name": "ForusVendor",
+        "address": "0x7b52d6b23a690518449907cf11fb3c11633e5445"
+      },
+      "0x5c235d9085f6ecea72b3884dea4dbbab38e86013e7b6446fc3f0b4553acd0ead": {
+        "name": "ForusVendor",
+        "address": "0x7b52d6b23a690518449907cf11fb3c11633e5445"
+      },
+      "0x1122eba864a4b6f61c99810cdaa52baf33e07f810731caef16d50289ccfe7662": {
+        "name": "Test",
+        "address": "0x3620b6c6081343f55e6ec581f0a639c27da44d22"
+      },
+      "0xf41c4cbdffc20d384392d4733e499b5ff1144c71f686031bff84659a308a44d2": {
+        "name": "Test",
+        "address": "0xe6ae84f6804a259f52cc607e8ac13318d83ea47f"
+      },
+      "0xd2b64d9c82f93847755662233621cb21e378f9168bd618727678393f6eba7d80": {
+        "name": "ForusVendor",
+        "address": "0x7b52d6b23a690518449907cf11fb3c11633e5445"
+      },
+      "0xe7ecb4e5178ce79173775315b47c59241839c599acbcd7a80a9017aeaad9fae8": {
+        "name": "ForusVendor",
+        "address": "0xff36654e33199de0551d88dbbbc7de59be8b85f3"
+      },
+      "0xbb5040c4b7d0018c8cd162ffb1f5e82126acddb0d7a9ec446d05576f0f6402cf": {
+        "name": "ForusVendor",
+        "address": "0x1a7a36cea5b5fd29b6d19ef9d2a312dea428587b"
+      },
+      "0x98d718597e0b56930c5fbfc61a3751c0f4e1e587f34739e787eead4ec3d7ee7a": {
+        "name": "IToken",
+        "address": "0x55a564838ee422698d989389cc88bb84c3003530"
+      },
+      "0xc66d244d70652bcb8d3d3758cf7701c44b0a6a4ec8df7fb8f6a1ae0185eb774e": {
+        "name": "ForusVendor",
+        "address": "0x1a7a36cea5b5fd29b6d19ef9d2a312dea428587b"
+      },
+      "0x477ca72b74e23d74394d7bea1797ea6c0396fbc8bb5e2b2e76cff5727243abce": {
+        "name": "ForusVendor",
+        "address": "0x1a7a36cea5b5fd29b6d19ef9d2a312dea428587b"
+      },
+      "0x22db59c7afe06269b9935df2f3a75d3b6c1c67c850e39667a4ef394a49445b72": {
+        "name": "Test",
+        "address": "0xd82ee74252d7235371b9a80187cfaf5baea76eee"
+      },
+      "0x3e06a35127e2522c0af504b61a96a4742bddbea1413e482defbd0e2f3e72434f": {
+        "name": "ForusVendor",
+        "address": "0x1a7a36cea5b5fd29b6d19ef9d2a312dea428587b"
+      },
+      "0x89f84d412871f788fda162b35c60e17751aab11293151fb3e6d4ffd526061a4e": {
+        "name": "Test",
+        "address": "0x1fb02011be5abaa509b6669858ac2b7acd2f3c79"
+      },
+      "0xeb77fcc76beb71b42c20443c8748ddfed02b15fda9869651ce8f83ce100ee980": {
+        "name": "ForusVendor",
+        "address": "0x1a7a36cea5b5fd29b6d19ef9d2a312dea428587b"
+      },
+      "0x8bf02323a4bb7fb683bb6eb46536c2f3d7896b56c24a0279a55857b6cc9e4fe8": {
+        "name": "Test",
+        "address": "0xfda7ad5a242d9c82a8477db125a8859ec55379c8"
+      },
+      "0xb87ede231db9588bf741263c553ec77ca0bcab94a35e732f3b2547781f1fb81d": {
+        "name": "Test",
+        "address": "0x4f719e3373a73a1ed8a987a28c0dbb6f4595b6a5"
+      },
+      "0x799ee17e5f76501c90cbe151ce1a7dac81e69c214fb1f993e14ec565428ccc36": {
+        "name": "Test",
+        "address": "0x17c0386ff52d160d0f8607ec5791f9e92e0b4a99"
+      },
+      "0x314f9022a940d79c9d4f3d599bf6a97f2a9de4e2cfb4787dba6c3e296fe83dd0": {
+        "name": "Test",
+        "address": "0x17c0386ff52d160d0f8607ec5791f9e92e0b4a99"
+      },
+      "0x15e62067e2e7e64d9607a7980afc0dbff7f0f1cb416d8db858c05aaa6d41f3f4": {
+        "name": "Test",
+        "address": "0x878c6065fed16ec2e85c2ed76f173aaf60f71904"
+      },
+      "0x1f310b692635e8782c41d772dce9ac91586910dc1191c528b940b0f94fb0d2fd": {
+        "name": "Test",
+        "address": "0x1b11c96a47dfc62121dd5a7743815bbfe4512b89"
+      },
+      "0xa046f9a06805c5a1fd56d98a555541bb10e6f96208e6e4268a1c5a060c6ab9cd": {
+        "name": "StringHelper",
+        "address": "0xfaeb2915b71b17786fbebf0c456e3d2906c3df8e"
+      },
+      "0x052b8b836c56ed39a7b6c94c37d47cd3400f7917e86cb46dd802252d4dfbfcef": {
+        "name": "StringHelper",
+        "address": "0xd27572d61f51f7a5c39b275f48fddd20154aaac0"
+      },
+      "0xfbf874d706bbb0ce3026f1cf30555a78dc6b159d949f57a17df1460f271f24cc": {
+        "name": "StringHelper",
+        "address": "0xdc4f6a156a8c833681308c25717164d5b7a487c7"
+      },
+      "0x858c60dcad8e2b51f97d30a78694ee235af687878bf4b793d0fd4456dbfb2378": {
+        "name": "StringHelper",
+        "address": "0xf0d8db88fbeedf2e9d90afa99912618c0bfa35b2"
+      },
+      "0x4655c26687d1e9b9d148847da754d648f1d5f7a1efce12fe5b1dbfc6d8c69d3e": {
+        "name": "StringHelper",
+        "address": "0x10b7b5263a3fa3bb4d8e9946b6bd79e6f73a7426"
+      },
+      "0x9f2984d8af73030a57736d780da8f4555c783362c943de6704c721ae7934174e": {
+        "name": "StringHelper",
+        "address": "0xb5e15b7c1666f7928f2009123d7620fe19f2c1ac"
+      },
+      "0xf28a24947101469842ebfc213f03eac8aff828fa4b8ea3389798d3c0e2c50f25": {
+        "name": "StringHelper",
+        "address": "0x9c27c4514f3ee29775fe09c026cbbd5623747b45"
+      },
+      "0x4d90d4b301fb4981155d97104e5d703b06521f1cc519a55084bf1740d9eb0829": {
+        "name": "StringHelper",
+        "address": "0xbfcace691b401023591e7ad54bd32e2b0c27ad1d"
+      },
+      "0xe59ce36335172b40f3c2fca403b19e371dd08848202c60b84be77565ac3e189f": {
+        "name": "StringHelper",
+        "address": "0x05cd76a3ffc4526b38e68e176d967605a6fa9eed"
+      },
+      "0xc15aa567f7bb16357c3f1521fac02c68913b4b2904499359bd92e8f51713ac48": {
+        "name": "StringHelper",
+        "address": "0x6380032c77fb068ee42942af1ac98b5111ac2f36"
+      },
+      "0x7df928dfd0fcb510a5c2e25a7a3c8ba7322286beb959d29d6c16fc216d871813": {
+        "name": "StringHelper",
+        "address": "0xa34df74178ae0e319b9982b914360206019825c5"
+      },
+      "0x070752bf7a2455e0989c3e32c0cd51bb4505c0ae0dee79526463a6c18b30210d": {
+        "name": "StringHelper",
+        "address": "0x298f08b7e215bb3ffc92bc6f9af9f0268757bbcf"
+      },
+      "0xc7f9a939eaf5b1734902c7a9d9e77bfb43a9483b10405f6b65321282d733c27d": {
+        "name": "IdentityManager",
+        "address": "0x99eabe5cffce097170f367d69498e53623dd427e"
+      },
+      "0x02fe753b32af787c572a0c719c08133007d5474978d1ee01d812f626ed87539d": {
+        "name": "IdentityManager",
+        "address": "0x99eabe5cffce097170f367d69498e53623dd427e"
+      },
+      "0x8c63d5683c79a95c775ddf017feea22c85c4cda5a7da7c81a3973ce8b969ac0d": {
+        "name": "IdentityManager",
+        "address": "0x99eabe5cffce097170f367d69498e53623dd427e"
+      },
+      "0x1b0ce9b19c9b0d372e5fe2305e9fac428169efa5b69493f588cbfcdf232d7736": {
+        "name": "ForusVendor",
+        "address": "0x436410ba91d73a496f7f88f26c1e25632501e4cc"
+      },
+      "0x0fc4579609a7428d28c899dd2008168d8d697434f25d1322b8ece15ea7339ab4": {
+        "name": "ForusVendor",
+        "address": "0xe5fa55637a5dcff1f553c32f4675ea7bceee485e"
+      },
+      "0xfb7f7472ec83d433f0a3bc29abbd7b1411d660ebdd4fd9b6f67b677f11e38394": {
+        "name": "ForusVendor",
+        "address": "0xc6ab75b4dd22181ffbb61a8d14d58686f36b3402"
+      },
+      "0xb25fa34afcf1452dee7578b7da6c7ab7f9857ac245b0241dcf2ed5faaa73180c": {
+        "name": "Test",
+        "address": "0xb482d1e2ebe2efe94a5961be62ba9c43aa178a88"
+      },
+      "0x59da80bbd9789b9ae2062922fce8bccaeb19d7aefaef0e939bdf493c6a111e40": {
+        "name": "Test",
+        "address": "0xe61f0271ff1bf538fe36dd179c9c285fff8cc96d"
+      },
+      "0xd1a6c699e340cbe6936df21cf81fc3990aa1bd540b6110544e6fa7ff4d807b58": {
+        "name": "Test",
+        "address": "0xa3c267aaec1a6e6b58498d257e978c9a3bb02955"
+      },
+      "0x2b70d71c980b3f2ce40ad8324998307d12f184b7112b307bb0194ee1f847f8fb": {
+        "name": "Test",
+        "address": "0x5ef23d53a4d7518f8815573ef2f3cf9550d1f6dd"
+      },
+      "0x988e675e44478cd255c2b50d2e0387c7b750bf78e00e4cf2f08c7bc13fb56d5d": {
+        "name": "Test",
+        "address": "0xa83b1068cf5886cb1641f20188f4f76ebb410d9c"
+      },
+      "0x877a625c27ac71ca0da4c51167667d86b2db08a7c49dfb48e13dc357ee293ed2": {
+        "name": "ForusVendor",
+        "address": "0xdc5c8d7cdb6a680e622bd480c8f2004bacc39a6b"
+      },
+      "0x153dd44f95b211e645bf3f24adb287c61ffb30e5e16ee852ade4173990487a92": {
+        "name": "ForusVendor",
+        "address": "0x8a1e9104bce992f1801e7a69995b62c29aa34d78"
+      },
+      "0xe2b0654284aadecdb4143041e2b49eee0428b0c3326328874616e27099c80aaa": {
+        "name": "ForusVendor",
+        "address": "0x987cf46fbb844c7de2f1310fa837afc8e34d28ec"
+      },
+      "0x2f5b3dc67abcf75a3d2c439d05ddd3f70d5d2c47bc6916f752b42fd77a790d0b": {
+        "name": "ForusVendor",
+        "address": "0x93fb595f8fd7cc2ed117b1cc2d9d4f5222fe9d6d"
+      },
+      "0x41829512e2617b8cba40cffc16bcad8af6c69af278dde39df2108f2d5fd7b772": {
+        "name": "ForusVendor",
+        "address": "0xce153363cff7f0745dca003f7e2e4010373fd68c"
+      },
+      "0xf97ef4ea4de0338d7c39fb3f8339d8a85d7cb82839edf43c274d34511dff44cd": {
+        "name": "ForusVendor",
+        "address": "0x09ee06163f7fce102335895a812ce8cd8a5b4131"
+      },
+      "0x2b55647ba8d95c91aca3085bcb5b017b2b3e87a78c5289df33f9f0ec4c6a6eaf": {
+        "name": "ForusVendor",
+        "address": "0x89aa4c9a4a83c977aa81ed6fcc595023a3a4c4c5"
+      },
+      "0xf17bc09c39439f9adaca565940a93a28fd25438cf9edc487180f84c10803e791": {
+        "name": "ForusVendor",
+        "address": "0x5963c0f3ff3da96f2e2721adc202bfa0ec1da2d1"
+      },
+      "0x5170f0743c7e768ba6b5fbd23b502471842947b5c2b0aa9c4841228d1a6b4969": {
+        "name": "ForusVendor",
+        "address": "0xa279f57928b0c82668bb007f3312ef3be4a8357d"
+      },
+      "0xa4eb69e68877a1afebd63d6097bcd944f59d0539b70dac9117953a6098ca3bb9": {
+        "name": "ForusVendor",
+        "address": "0xdeae06d32d05c54033a285bb3337c6a832de5511"
+      },
+      "0x51427ece0f14f6303e2f755d8d14210813ea0cdc04b9b49b1b4ae51f83a39d04": {
+        "name": "ForusVendor",
+        "address": "0xb46ae20a0bc28d21558602b09374f533d7663f5c"
+      },
+      "0xbf3a9b82026edb2939adb57515a2d0152980d88f6ea42c8481eb59999d50a635": {
+        "name": "ForusVendor",
+        "address": "0x758048d201b4bd9d8e277094c0d2ef36d5c2c316"
+      },
+      "0x40f4ef7843538075aecc0b991b9cc206be8784776a57a9788835aa9934f6f61d": {
+        "name": "ForusVendor",
+        "address": "0x54e61c17a169767b77a605a23e4a1aa7f2f7a925"
+      },
+      "0x932c3339381b6ddf96a8e9359fe4f5673127f2caaf5275e575a9fb95be58b46e": {
+        "name": "ForusVendor",
+        "address": "0x6e15b22b1030f418188736bd89990546f251c748"
+      },
+      "0xb08029b8ba1c45d2f3f5d221c330bf11cb8214122b899d690edf6fc97c12377f": {
+        "name": "PlatformForus",
+        "address": "0x463763c72850eda84a2a70d69294591eb62475ff"
+      },
+      "0x1f01ef461fa7e02c1c675d782f1c1f72fe6d5923f0d9681bf879f8dc22084266": {
+        "name": "IdentityManager",
+        "address": "0x6b7fb9169c798dbcf4f82f305d1c0dd85d83296b"
+      }
+    },
+    "name": "development"
+  },
+  "0xbdc92b16e87dde23d9ab1c6e4c02247d74ef299b9b19d27cadfe2415c47ddbde": {
+    "contracts": {
+      "0x497a1ea52e3999d72d05e1b5122ebc83f459e28ad3f87808642fc672a1b7204e": {
+        "name": "IdentityManager",
+        "address": "0x1000000000000000000000000000000000001234"
+      },
+      "0x051f871c42a1470aa68dfbe4ef48ba05309efe954580cf3fd0b66249877c822c": {
+        "name": "ForusVendor",
+        "address": "0x3ff51120D34f4318B6aff85DbCa5481DbF03f40B"
+      }
+    },
+    "name": "development"
+  },
+  "0x534e60189d45a9aefb38f0a17e9d283882249cb5fb2ad6f7a45390bea8bd6e1e": {
+    "contracts": {
+      "0x497a1ea52e3999d72d05e1b5122ebc83f459e28ad3f87808642fc672a1b7204e": {
+        "name": "IdentityManager",
+        "address": "0x1000000000000000000000000000000000001234"
+      },
+      "0x051f871c42a1470aa68dfbe4ef48ba05309efe954580cf3fd0b66249877c822c": {
+        "name": "ForusVendor",
+        "address": "0x3ff51120D34f4318B6aff85DbCa5481DbF03f40B"
+      }
+    },
+    "name": "development"
+  },
+  "0x225eb43cbb007e45f73592410fc563b94c654965bcb90facab8de6e81256eeee": {
+    "contracts": {
+      "0x497a1ea52e3999d72d05e1b5122ebc83f459e28ad3f87808642fc672a1b7204e": {
+        "name": "IdentityManager",
+        "address": "0x1000000000000000000000000000000000001234"
+      },
+      "0x051f871c42a1470aa68dfbe4ef48ba05309efe954580cf3fd0b66249877c822c": {
+        "name": "ForusVendor",
+        "address": "0x3ff51120D34f4318B6aff85DbCa5481DbF03f40B"
+      }
+    },
+    "name": "development"
+  },
+  "0xd8f3eeac937803380fd3d647560b6cd67b7deb7201d4b5dfcc43782179c2404e": {
+    "contracts": {
+      "0x497a1ea52e3999d72d05e1b5122ebc83f459e28ad3f87808642fc672a1b7204e": {
+        "name": "IdentityManager",
+        "address": "0x1000000000000000000000000000000000001234"
+      },
+      "0x051f871c42a1470aa68dfbe4ef48ba05309efe954580cf3fd0b66249877c822c": {
+        "name": "ForusVendor",
+        "address": "0x3ff51120D34f4318B6aff85DbCa5481DbF03f40B"
+      }
+    },
+    "name": "development"
+  },
+  "0x79e4dd189ed5b14fcb4bca14c2afcee0f69572cc3c21bac678cd22c01f3c9c7d": {
+    "contracts": {
+      "0xbe26f5dd4046fd28bdc56dbb2b1e90f3a682bb00ab68b58f4a7ee2913ee01862": {
+        "name": "IdentityManager",
+        "address": "0x99eabe5cffce097170f367d69498e53623dd427e"
+      },
+      "0x0574f809b3612eb55eecadfd5d022ff77af2d5b13371791fa7acb01789f46a28": {
+        "name": "ForusVendor",
+        "address": "0x3ff51120D34f4318B6aff85DbCa5481DbF03f40B"
+      }
+    },
+    "name": "development"
+  },
+  "0xdc38ecae5d9d19fce5f0fff104e85ddbae2b07385acab3c2093f52a9621ae038": {
+    "contracts": {
+      "0x02fe753b32af787c572a0c719c08133007d5474978d1ee01d812f626ed87539d": {
+        "name": "IdentityManager",
+        "address": "0x99eabe5cffce097170f367d69498e53623dd427e"
+      },
+      "0x8c63d5683c79a95c775ddf017feea22c85c4cda5a7da7c81a3973ce8b969ac0d": {
+        "name": "IdentityManager",
+        "address": "0x99eabe5cffce097170f367d69498e53623dd427e"
+      }
+    },
+    "name": "development"
+  },
+  "0xa921e966c4296fe2952b65ff4e6a5efc2b87f7957fcabc460b9c78cdff271c29": {
+    "contracts": {
+      "0x7df928dfd0fcb510a5c2e25a7a3c8ba7322286beb959d29d6c16fc216d871813": {
+        "name": "StringHelper",
+        "address": "0xd3597b7704337c12e0d82c2440c8533b82d337f5"
+      },
+      "0x8c63d5683c79a95c775ddf017feea22c85c4cda5a7da7c81a3973ce8b969ac0d": {
+        "name": "IdentityManager",
+        "address": "0xba853055869fa59ca7c8e56d5d5371d964231c4e"
+      },
+      "0x2d4c5d5fe9749181cd1a0bc388fe1fd3842b417874327aa7b6a3477ebaa1bdae": {
+        "name": "PlatformForus",
+        "address": "0x29b56c8b256f59cc14103b8ebe69c957c6a6d6a4"
+      },
+      "0xd9b0d19a69d9418a4c27b25b2ad2e65a2ce42ff0f45d8e833341ed374b0ccfa8": {
+        "name": "IdentityManager",
+        "address": "0xba853055869fa59ca7c8e56d5d5371d964231c4e"
+      },
+      "0x004d44c7b5b54eafa5722bc64420a8a28521a0cb8c969762982c01c0d77ece8b": {
+        "name": "PlatformForus",
+        "address": "0x0db8b36dffd51b2ee001c8edbf168ee0e4912447"
+      },
+      "0xc5af5734953907381f8ff58437b1759e5df5bdb1065bd28f7826ecc40c454106": {
+        "name": "IdentityManager",
+        "address": "0xba853055869fa59ca7c8e56d5d5371d964231c4e"
+      },
+      "0xb4cf3555fea5b55288513e7fea4143d2303415e6a479587ed41a134a5963b440": {
+        "name": "PlatformForus",
+        "address": "0x89df289c29e0c1c77ea689b0678496cfc90f072c"
+      },
+      "0xe18eb147b6873efbeb88f715b62e4ff7412655fd93a253916ac2427f7d47a106": {
+        "name": "IdentityManager",
+        "address": "0xba853055869fa59ca7c8e56d5d5371d964231c4e"
+      },
+      "0xafca18e73350f2404c366e482d429bdbcb05d5ec80f1864a39182818b7e69b7d": {
+        "name": "PlatformForus",
+        "address": "0x530dd4d0abfcd9a58cfcf66e42e94b1dad3cd189"
+      },
+      "0x1f01ef461fa7e02c1c675d782f1c1f72fe6d5923f0d9681bf879f8dc22084266": {
+        "name": "IdentityManager",
+        "address": "0xde2d51e75ca23f967b8ee7c9aca7449926279627"
+      },
+      "0x8da6011413260694e1ad9162367ae7c728c158a88a3f6ed66bcee821995f6770": {
+        "name": "PlatformForus",
+        "address": "0xc6f3b143778b76d442f965e17db1ed68a3c8f98b"
+      },
+      "0x786269fb804b2aaf874fac33190987a8e4317f183f96367e5266e507194a1494": {
+        "name": "PlatformForus",
+        "address": "0xd76072778e21d32ba26ae21211a50cd100cd639e"
+      },
+      "0xa6308de7791abb367130755cdb119bdcc3db037685a214bb163e160808d8caec": {
+        "name": "PlatformForus",
+        "address": "0xad38a8c9da498b36984e2d57f2b2c4c1fa56c21a"
+      },
+      "0x34998e2950ea79d7b71b35a915444517b3ca02a556ae211a8fb15a1dd2f05325": {
+        "name": "PlatformForus",
+        "address": "0x589e663204e61acaa5f1cda186bf244ade2567e2"
+      },
+      "0xb5c97802600b7b3e777ed184dfdff85aefa3bc6ac566944f8966b6d6494d0157": {
+        "name": "PlatformForus",
+        "address": "0x833675260a9338610cc23abc7bb242bfb9e3e84b"
+      },
+      "0xf39452c2c2239906301c21f61a3b293308ce782455ab41969ba35604a70d52af": {
+        "name": "PlatformForus",
+        "address": "0x1c7feced225f0f73f951cf0d7809246d9d7f4ea9"
+      },
+      "0xea62cd4e6c25963f48ea89e797894aaff8398dbddecad0468ba8dd77a2ea3ac2": {
+        "name": "PlatformForus",
+        "address": "0x60018912642722ce37e8505923495c411e39822f"
+      },
+      "0xd204bf7552596d827a1db228b76df464b5897a8257440df2f2b2debf8fa071f3": {
+        "name": "PlatformForus",
+        "address": "0xf59cd87e9d49918c2a0eba09fc76854c6808c12c"
+      },
+      "0xcf6234be438b0cb5053b687dcf5b767287508559d1b307610d7ec04da52fde49": {
+        "name": "PlatformForus",
+        "address": "0x7cef47642ccf8eaf6b6ee40b3679f3d770e38cad"
+      }
+    },
+    "name": "development"
+  },
+  "0xdfb5a47b5e830fb7b8d533782dd800495c902cf922cb1efc806200fb9fd2a562": {
+    "contracts": {
+      "0x7df928dfd0fcb510a5c2e25a7a3c8ba7322286beb959d29d6c16fc216d871813": {
+        "name": "StringHelper",
+        "address": "0x97bfb296c29d075d9d2634b94814dc17b0b168b4"
+      },
+      "0x8c63d5683c79a95c775ddf017feea22c85c4cda5a7da7c81a3973ce8b969ac0d": {
+        "name": "IdentityManager",
+        "address": "0x61e36bef8b7cf4dc5513eab7eef90ff0a78dfdb3"
+      },
+      "0xc6583cff1b1548ec6be44e61e78cb9f26a85ad0dd3a201cd6cfab9c6af36e81e": {
+        "name": "PlatformForus",
+        "address": "0x011c445e62e2716860cd570c1b4f37c67c12862f"
+      }
+    },
+    "name": "development"
+  }
+}

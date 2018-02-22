@@ -1,0 +1,63 @@
+{
+  "default": {
+    "versions": {
+      "web3.js": "1.0.0-beta",
+      "solc": "0.4.17"
+    },
+    "deployment": {
+      "host": "localhost",
+      "port": 8545,
+      "type": "rpc"
+    },
+    "dappConnection": [
+      "$WEB3",
+      "http://localhost:8545"
+    ],
+    "gas": "auto",
+    "contracts": {
+      "StringHelper": {
+        "address": "0xd3597b7704337c12e0d82c2440c8533b82d337f5",
+        "deploy": true
+      },
+      "IdentityManager": { 
+        "address": "0xde2d51e75ca23f967b8ee7c9aca7449926279627",
+        "deploy": true
+      },
+      "PlatformForus": { 
+        "deploy": true,
+        "args": [
+          "$IdentityManager"
+        ]
+      },
+      "Asset": {
+        "deploy": false
+      },
+      "ERC20": {
+        "deploy": false
+      },
+      "Identity": {
+        "deploy": false
+      },
+      "Owned": {
+        "deploy": false
+      },
+      "Service": { 
+        "deploy": false
+      },
+      "Token": {
+        "deploy": false,
+        "args": [
+          "Badeend Token",
+          "0x2b347519Ef4aA4A5b5218BfA140FD7e40517bDe4",
+          13
+        ]
+      },
+      "Validated": {
+        "deploy": false
+      },
+      "Vendored": { 
+        "deploy": false
+      }
+    }
+  }
+}
