@@ -1,68 +1,75 @@
-**Note:** What follows below is a rough and incomplete draft. It tries to minimise the amount of end-points and focus on the core "low level" interactions. To allow for more flexibility, abstractions will happen at the client/front-end. Later, we might offer SDK's to help developers with this.
-
 # Summary
 
 This API facilitates the decentralized exchange of value if criteria are met.
 
 ### The main interaction:
-**A fund** is a collection of resources, with attached criteria.
-**A user** has certain properties.
+**An offer** is a product/service made to be available under attached criteria.  
+**A user** has an [identity](https://github.com/teamforus/concept-identity) that holds properties and assets.
 
-**If** the *properties* of the user equal the *criteria* of the fund **then** transfer the resources to the user.
+**If** the *properties* of the user equal the *criteria* of the offer **then** perform the transaction.
 
-### The main functions:
+# API/Protocol
 
-To facilitate these interactions the protocol offers these 4 main functions:
+## Shop:
+**Note:** work in progress
 
-**Sponsor:** Make resources available.
-**Validate:** Confirm user properties.
-**Request:** Apply for a resource from a fund.
-**Provide:** Deliver the resource to the user.
+### api.forus.io/offer
+To make something available for exchange when criteria are met.
 
-The protocol assumes that a user has an "Identity" that holds properties and assets (https://github.com/teamforus/concept-identity).
-
-# Sponsor
-TBD, based on https://github.com/teamforus/concept-platform/issues/2
-
-# Validate
-INCOMPLETE, based on https://github.com/teamforus/concept-platform/issues/3
-
-// private info that will be added to the identity of the user
-
-**Path** /validate
-**Method** POST
-**Request Body**
+body:
 
 ````
-{
-user: public key
-property: string
-value: string
-}
+get
+	get offers
+
+post
+	product/service
+	quantity
+	criteria
 ````
-**Response Body** None
-**Status Code** 200 -> success
 
+#### api.forus.io/offer/sponsor
+Pay the provider when a requester meets criteria of an offer.
 
-## Get validation requests
-Note: the identifier should be trustable.
-
-**Path** /validate
-**Method** GET
-**Request Body** none
-**Response Body**
+body:
 
 ````
-public key {
-identifier: string (bsn, etc.)
-property: string
-value: string
-}
+post
+	product/service
+	criteria
+	a signed transaction / proof of making the funds available
 ````
-**Status Code** 200 -> success
 
-# Request
-TBD, based on https://github.com/teamforus/concept-platform/issues/4
+### api.forus.io/offer/provide
+Providing entails a (physical) action like handing over an asset or providing a service. In return a provider gets paid by the customer or one or multiple sponsors, or if the requester meets other criteria put by the sponsor, no payment is performed.
 
-# Provide
-TBD, based on https://github.com/teamforus/concept-platform/issues/5
+### api.forus.io/request
+Request a product or service from a provider.
+
+body:
+
+````
+get
+	receive the criteria
+
+post
+	proof of payment: signed transaction
+	proof of properties: signed info
+````
+
+## app:
+**note:** incomplete
+
+### api.forus.io/properties
+
+body:
+
+````
+get: 
+	validation requests
+	type: asset / record
+
+post:
+	address/key/value
+	signed validation (optionally encrypted with public key)
+````
