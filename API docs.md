@@ -1,5 +1,4 @@
 # Summary
-
 This API facilitates the decentralized exchange of value if criteria are met.
 
 ### The main interaction:
@@ -7,8 +6,6 @@ This API facilitates the decentralized exchange of value if criteria are met.
 **A user** has an [identity](https://github.com/teamforus/concept-identity) that holds properties and assets.
 
 **If** the *properties* of the user equal the *criteria* of the offer **then** perform the transaction.
-
-# API/Protocol
 
 ## Shop:
 **Note:** work in progress
