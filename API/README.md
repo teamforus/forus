@@ -2,10 +2,35 @@
 This API facilitates the decentralized exchange of value if criteria are met.
 
 ### The main interaction:
+**A user** has an [identity](https://github.com/teamforus/concept-identity) that holds properties and assets.  
 **An offer** is a product/service made to be available under attached criteria.  
-**A user** has an [identity](https://github.com/teamforus/concept-identity) that holds properties and assets.
 
 **If** the *properties* of the user equal the *criteria* of the offer **then** perform the transaction.
+
+## identity app:
+**note:** work in progress
+
+### api.forus.io/properties
+
+body:
+
+````
+get: 
+	type: asset / record
+	validation requests
+
+post:
+	address/key/value
+	signed validation (optionally encrypted with public key)
+````
+
+### api.forus.io/properties/assets
+
+#### api.forus.io/properties/assets/transfer
+
+### api.forus.io/properties/records
+
+#### api.forus.io/properties/records/validate
 
 ## Shop:
 **Note:** work in progress
@@ -52,21 +77,4 @@ get
 post
 	proof of payment: signed transaction
 	proof of properties: signed info
-````
-
-## app:
-**note:** incomplete
-
-### api.forus.io/properties
-
-body:
-
-````
-get: 
-	validation requests
-	type: asset / record
-
-post:
-	address/key/value
-	signed validation (optionally encrypted with public key)
 ````
