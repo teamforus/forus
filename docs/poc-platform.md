@@ -1,4 +1,4 @@
-# Forus.io concept platform documentation
+# Forus.io platform poc documentation
 
 ## Instances
 A blockchain instance has his own Ethereum address. 
