@@ -1,6 +1,6 @@
 # Readme
 
-**note:** under active development, beware of the dragons 🐉 
+**note:** work in progress, beware of the dragons 🐉 
 
 ## Repository structure
 
