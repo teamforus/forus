@@ -3,7 +3,12 @@
 Folder | Description
 -------|-----------
 docs	|	Documentation
+designs	|	Design sources
 front-shop	|	Front-end
+front-shop-ext-provider | Provider extention
+front-shop-ext-sponsor | Provider extention
+front-shop-ext-validator | Validator extention
+front-shop-ext-requester | Requester extention
 front-crowd	|	Front-end
 front-vote	|	Front-end
 SDL		|	API
