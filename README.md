@@ -4,7 +4,7 @@ Folder | Description
 -------|-----------
 docs	|	Documentation
 designs	|	Design sources
-front-shop	|	Front-end
+front-shop	|	Core shop
 front-shop-ext-provider | Provider extention
 front-shop-ext-sponsor | Provider extention
 front-shop-ext-validator | Validator extention
