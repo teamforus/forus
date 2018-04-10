@@ -1,4 +1,3 @@
-# concept-shop
 **Note:** Work in progress
 
 # forus.io core
