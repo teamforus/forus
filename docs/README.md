@@ -29,3 +29,6 @@ Module | Nickname | Description
 
 ## Architecture
 ![architecture](https://user-images.githubusercontent.com/30194799/38467316-b60c89f8-3b36-11e8-8047-45b8aadc5beb.png)
+
+## Decentralisation roadmap
+![backend](https://user-images.githubusercontent.com/30194799/35958479-4de215d2-0ca1-11e8-9938-d1cad797529c.png)
