@@ -1,8 +1,8 @@
-# forus.io
+# forus.io mvp
 
-Below you see wireframes for forus.io, it implements essential functionality and leaves extra / custom functionality to [extentions](README.md#architecture).
+Below you see wireframes for forus.io, where core functionality is implemented. Custom functionality is added trough [extentions](README.md#architecture).
 
-
+**note:** work in progress
 
 ## 1.1 Main page without subsidies
 ![forus io - mvp-1](https://user-images.githubusercontent.com/30194799/38660051-31ed2ed6-3e2c-11e8-9807-1fc23e8a8167.png)
@@ -35,7 +35,7 @@ The user has now added the validations to their records, this means that they ca
 
 
 
-### Some additional shop page ui/ux notes
+### Some additional ui/ux notes:
 ![1 shop](https://user-images.githubusercontent.com/30194799/37429628-32aa7b70-27d0-11e8-8e28-c7f6d83dd2cc.png)  
 
-When performing a search the products will re-arrange like [etherian.world](https://etherian.world). Products/services will be grouped/catagorized as proposed in [this image](https://user-images.githubusercontent.com/30194799/37451861-378892fe-2833-11e8-9894-ced81ed4710a.png).
+When performing a search the offers should re-arrange like [etherian.world](https://etherian.world). Products/services can be grouped/catagorized as proposed in [this image](https://user-images.githubusercontent.com/30194799/37451861-378892fe-2833-11e8-9894-ced81ed4710a.png), it could support multiple levels of nesting e.g. bike > female > brand > model in a flexible way. A very cool feature would be to sort the offers based on the records of the user (of course  privacy is a big concern here, therefore maybe the processing could happen on device), also  provider and product/service ratings could offer input for sorting the offers. 
