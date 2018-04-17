@@ -9,7 +9,7 @@ designs	|	Design sources
 
 Module | Description
 -----|------
-[**forus.io**](forus.io.md)	|	Core shop
+[**forus.io**-front](forus.io.md)	|	Core shop
 **forus.io**-ext-provider	| Provider extention
 **forus.io**-ext-sponsor | Provider extention
 **forus.io**-ext-sponsor-crowd | Crowdfunding extention
