@@ -32,7 +32,11 @@ post:
 
 ### api.forus.io/properties/assets
 
-#### api.forus.io/properties/assets/transfer
+#### api.forus.io/properties/assets/fungible/
+
+#### api.forus.io/properties/assets/nonfungible/
+
+#### api.forus.io/properties/assets/nonfungible/transfer
 
 ### api.forus.io/properties/records
 
