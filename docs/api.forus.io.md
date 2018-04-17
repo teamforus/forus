@@ -1,13 +1,19 @@
 # Summary
 This API facilitates the decentralized exchange of value if criteria are met.
 
-### The main interaction:
+## core functionality:
+
+### Me app:
+* transactions
+* validations
+
+### The main forus.io interaction:
 **A user** has an [identity](https://github.com/teamforus/concept-identity) that holds properties and assets.  
 **An offer** is a product/service made to be available under attached criteria.  
 
 **If** the *properties* of the user equal the *criteria* of the offer **then** perform the transaction.
 
-## identity app:
+## Identity [(me app)](https://github.com/teamforus/me):
 **note:** work in progress
 
 ### api.forus.io/properties
@@ -32,7 +38,7 @@ post:
 
 #### api.forus.io/properties/records/validate
 
-## Shop:
+## sponsored webshop [(forus.io)](https://github.com/teamforus/forus.io):
 **Note:** work in progress
 
 ### api.forus.io/offer
