@@ -1,0 +1,3 @@
+[submodule "ETH"]
+	path = ETH
+	url = https://github.com/teamforus/api.forus.io-ethereum.git
