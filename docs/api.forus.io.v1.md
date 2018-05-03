@@ -2,10 +2,9 @@
 
 ## Identity and records
 
+### // Registration
 
 ````
-
-// Registration
 POST /identity
     REQUEST:
         pin_code: (optional)
@@ -17,14 +16,17 @@ POST /identity
         {
             access_token: ""
         }
+````
 
-// Logout
+### // Logout
+````
 DELETE /identity/proxy
     REQUEST: {}
     RESPONSE: {}
+````
 
-
-// Set pincode
+### // Set pincode
+````
 POST /identity/pin-code
     REQUEST:
         {
@@ -35,30 +37,34 @@ POST /identity/pin-code
         {
             success: true/false
         }
-
-// Check pincode
+````
+### // Check pincode
+````
 GET /identity/pin-code/53343
     REQUEST:
     RESPONSE:
         {
             match: true/false
         }
-
-// Generate new proxy (auth code)
+````
+### // Generate new proxy (auth code)
+````
 POST /identity/code
     REQUEST: {}
     RESPONSE: {
         auth_code: 123456
     }
-
-// Generate new proxy (auth token)
+````
+### // Generate new proxy (auth token)
+````
 POST /identity/token
     REQUEST: {}
     RESPONSE: {
         auth_token: ""
     }
-
-// Generate new proxy (auth email)
+````
+### // Generate new proxy (auth email)
+````
 POST /identity/email
     REQUEST: {
         email: "",
@@ -67,8 +73,9 @@ POST /identity/email
     RESPONSE: {
         success: true/false
     }
-
-// Authorize given auth token
+````
+### // Authorize given auth token
+````
 POST /identity/authorize/token
     REQUEST: {
         auth_token: ""
@@ -76,8 +83,9 @@ POST /identity/authorize/token
     RESPONSE: {
         success: true/false
     }
-
-// Authorize given auth code
+````
+### // Authorize given auth code
+````
 POST /identity/authorize/code
     REQUEST: {
         auth_code: 123456
@@ -85,14 +93,16 @@ POST /identity/authorize/code
     RESPONSE: {
         success: true/false
     }
-
-// Authorize given auth email (response json/redirect)
+````
+### // Authorize given auth email (response json/redirect)
+````
 GET /identity/authorize/email/459348759348573489
     REQUEST: {}
     RESPONSE: {}
+````
 
-
-// Record categories
+### // Record categories
+````
 GET /identity/record-categories
     REQUEST: {}
     RESPONSE: [
@@ -103,8 +113,9 @@ GET /identity/record-categories
             order: 0
         }
     ]
-
-// Add record category
+````
+### // Add record category
+````
 POST /identity/record-categories
     REQUEST: {
         name: "",
@@ -112,8 +123,9 @@ POST /identity/record-categories
     RESPONSE: {
         success: true/false
     }
-
-// Update record category
+````
+### // Update record category
+````
 PUT /identity/record-categories/1
     REQUEST: {
         name: "",
@@ -121,8 +133,9 @@ PUT /identity/record-categories/1
     RESPONSE: {
         success: true/false
     }
-
-// Sort record categories
+````
+### // Sort record categories
+````
 PUT /identity/record-categories/order
     REQUEST: {
         categories: [5, 1, 2, 3, 4],
@@ -130,8 +143,9 @@ PUT /identity/record-categories/order
     RESPONSE: {
         success: true/false
     }
-
-// Get records
+````
+### // Get records
+````
 GET /identity/records
     REQUEST: {}
     RESPONSE: [
@@ -143,8 +157,9 @@ GET /identity/records
             record_category_id,
         }
     ]
-
-// Add record
+````
+### // Add record
+````
 POST /identity/records
     REQUEST: {
         key: "",
@@ -154,9 +169,10 @@ POST /identity/records
     RESPONSE: {
         success: true/false
     }
+````
 
-
-// Show record
+### // Show record
+````
 GET /identity/records/1
     REQUEST: {}
     RESPONSE: {
@@ -168,8 +184,9 @@ GET /identity/records/1
 
         }]
     }
-
-// Update record
+````
+### // Update record
+````
 PUT /identity/records/1
     REQUEST: {
         record_category_id: null,
@@ -177,8 +194,9 @@ PUT /identity/records/1
     RESPONSE: {
         success: true/false
     }
-
-// Delete record
+````
+### // Delete record
+````
 DELETE /identity/records/1
     REQUEST: {}
     RESPONSE: {
