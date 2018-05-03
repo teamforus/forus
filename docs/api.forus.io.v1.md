@@ -1,6 +1,6 @@
-##api.forus.io/v1/
+## api.forus.io/v1/
 
-##Identity and records
+## Identity and records
 
 
 ````
