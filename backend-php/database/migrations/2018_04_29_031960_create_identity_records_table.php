@@ -17,8 +17,8 @@ class CreateIdentityRecordsTable extends Migration
             $table->increments('id');
             $table->integer('identity_id')->unsigned();
             $table->integer('record_type_id')->unsigned();
-            $table->integer('identity_record_category_id')->unsigned();
-            $table->string('value');
+            $table->integer('identity_record_category_id')->unsigned()->nullable();
+            $table->string('value')->default('');
             $table->integer('order')->unsigned()->default(0);
             $table->timestamps();
 

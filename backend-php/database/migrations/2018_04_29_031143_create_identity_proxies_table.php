@@ -16,8 +16,10 @@ class CreateIdentityProxiesTable extends Migration
         Schema::create('identity_proxies', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('identity_id')->unsigned()->nullable();
-            $table->string('access_token', 64);
-            $table->string('validation_token', 64);
+            $table->string('access_token', 64)->nullable();
+            $table->string('auth_token', 64)->nullable();
+            $table->string('auth_code', 64)->nullable();
+            $table->string('auth_email_token', 64)->nullable();
             $table->string('state', 20);
             $table->integer('expires_in');
             $table->timestamps();

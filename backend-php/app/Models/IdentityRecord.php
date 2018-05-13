@@ -2,11 +2,14 @@
 
 namespace App\Models;
 
+use Barryvdh\LaravelIdeHelper\Eloquent;
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class IdentityRecord
+ * @mixin Eloquent
  * @property mixed $id
  * @property integer $identity_id
  * @property integer $record_type_id
@@ -16,6 +19,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property Identity $identity
  * @property RecordType $record_type
  * @property IdentityRecordCategory $identity_record_category
+ * @property Collection $validations
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @package App\Models
@@ -51,5 +55,12 @@ class IdentityRecord extends Model
      */
     public function identity_record_category() {
         return $this->belongsTo(IdentityRecordCategory::class);
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function validations() {
+        return $this->belongsTo(IdentityRecordValidation::class);
     }
 }

@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function (
-    \App\Repositories\Interfaces\IUsersRepo $userRepo
-) {
+Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test', "TestController@test");

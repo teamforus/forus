@@ -180,6 +180,10 @@ return [
 
         Dimsav\Translatable\TranslatableServiceProvider::class,
 
+        App\Services\TokenGeneratorService\UUIDGeneratorServiceProvider::class,
+        App\Services\MailBus\MailBusProvider::class,
+
+
     ],
 
     /*

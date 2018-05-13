@@ -10,7 +10,9 @@ use Illuminate\Database\Eloquent\Model;
  * @property mixed $id
  * @property integer $identity_id
  * @property string $access_token
- * @property string $validation_token
+ * @property string $auth_token
+ * @property string $auth_code
+ * @property string $auth_email_token
  * @property string $state
  * @property integer $expires_in
  * @property Identity $identity
@@ -26,8 +28,8 @@ class IdentityProxy extends Model
      * @var array
      */
     protected $fillable = [
-        'identity_id', 'access_token', 'validation_token', 'state',
-        'expires_in'
+        'identity_id', 'access_token', 'auth_token', 'auth_code',
+        'auth_email_token', 'state', 'expires_in'
     ];
 
     /**

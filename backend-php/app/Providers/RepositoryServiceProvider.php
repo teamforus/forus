@@ -26,5 +26,13 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(
             'App\Repositories\Interfaces\IUsersRepo',
             'App\Repositories\UsersRepo');
+
+        $this->app->bind(
+            'App\Repositories\Interfaces\IIdentityRepo',
+            'App\Repositories\IdentityRepo');
+
+        $this->app->bind(
+            'App\Repositories\Interfaces\IRecordRepo',
+            'App\Repositories\RecordRepo');
     }
 }
