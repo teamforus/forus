@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -53,22 +51,22 @@ Route::group(['namespace' => 'Api', 'middleware' => ['api.auth']], function() {
             Route::get('/', 'Identity\RecordCategoryController@index');
             Route::post('/', 'Identity\RecordCategoryController@store');
             Route::put('/sort', 'Identity\RecordCategoryController@sort');
-            Route::get('/{identityRecordCategory}', 'Identity\RecordCategoryController@show');
-            Route::put('/{identityRecordCategory}', 'Identity\RecordCategoryController@update');
-            Route::delete('/{identityRecordCategory}', 'Identity\RecordCategoryController@destroy');
+            Route::get('/{recordCategoryId}', 'Identity\RecordCategoryController@show');
+            Route::put('/{recordCategoryId}', 'Identity\RecordCategoryController@update');
+            Route::delete('/{recordCategoryId}', 'Identity\RecordCategoryController@destroy');
         });
 
         /**
-         * Records
+         * Record
          */
         Route::group(['prefix' => '/records'], function() {
             Route::get('/', 'Identity\RecordController@index');
             Route::post('/', 'Identity\RecordController@store');
             Route::get('/types', 'Identity\RecordController@typeKeys');
             Route::put('/sort', 'Identity\RecordController@sort');
-            Route::get('/{identityRecord}', 'Identity\RecordController@show');
-            Route::put('/{identityRecord}', 'Identity\RecordController@update');
-            Route::delete('/{identityRecord}', 'Identity\RecordController@destroy');
+            Route::get('/{recordId}', 'Identity\RecordController@show');
+            Route::put('/{recordId}', 'Identity\RecordController@update');
+            Route::delete('/{recordId}', 'Identity\RecordController@destroy');
         });
     });
 

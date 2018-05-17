@@ -4,24 +4,18 @@ namespace App\Http\Controllers\Api\Identity;
 
 use App\Http\Requests\Api\RecordCategories\RecordCategoryStoreRequest;
 use App\Http\Requests\Api\RecordCategories\RecordCategoryUpdateRequest;
-use App\Models\IdentityRecordCategory;
-use App\Repositories\Interfaces\IRecordRepo;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class RecordCategoryController extends Controller
 {
-    /** @var IRecordRepo $recordRepo */
     private $recordRepo;
 
     /**
      * RecordCategoryController constructor.
-     * @param IRecordRepo $recordRepo
      */
-    public function __construct(
-        IRecordRepo $recordRepo
-    ) {
-        $this->recordRepo = $recordRepo;
+    public function __construct() {
+        $this->recordRepo = app()->make('forus.services.record');
     }
 
     /**
@@ -56,24 +50,24 @@ class RecordCategoryController extends Controller
     /**
      * Get record category
      * @param Request $request
-     * @param IdentityRecordCategory $identityRecordCategory
+     * @param int $recordCategoryId
      * @return array|null
      */
     public function show(
         Request $request,
-        IdentityRecordCategory $identityRecordCategory
+        int $recordCategoryId
     ) {
         $identity = $request->get('identity');
 
         if (empty($this->recordRepo->categoryGet(
-            $identity, $identityRecordCategory->id
+            $identity, $recordCategoryId
         ))) {
             abort(404);
         }
 
         $category = $this->recordRepo->categoryGet(
             $identity,
-            $identityRecordCategory->id
+            $recordCategoryId
         );
 
         if (!$category) {
@@ -86,24 +80,24 @@ class RecordCategoryController extends Controller
     /**
      * Update record category
      * @param RecordCategoryUpdateRequest $request
-     * @param IdentityRecordCategory $identityRecordCategory
+     * @param int $recordCategoryId
      * @return array
      */
     public function update(
         RecordCategoryUpdateRequest $request,
-        IdentityRecordCategory $identityRecordCategory
+        int $recordCategoryId
     ) {
         $identity = $request->get('identity');
 
         if (empty($this->recordRepo->categoryGet(
-            $identity, $identityRecordCategory->id
+            $identity, $recordCategoryId
         ))) {
             abort(404);
         }
 
         $success = $this->recordRepo->categoryUpdate(
             $request->get('identity'),
-            $identityRecordCategory->id,
+            $recordCategoryId,
             $request->input('name', null),
             $request->input('order', null)
         );
@@ -114,25 +108,25 @@ class RecordCategoryController extends Controller
     /**
      * Delete record category
      * @param Request $request
-     * @param IdentityRecordCategory $identityRecordCategory
+     * @param int $recordCategoryId
      * @return array
      * @throws \Exception
      */
     public function destroy(
         Request $request,
-        IdentityRecordCategory $identityRecordCategory
+        int $recordCategoryId
     ) {
         $identity = $request->get('identity');
 
         if (empty($this->recordRepo->categoryGet(
-            $identity, $identityRecordCategory->id
+            $identity, $recordCategoryId
         ))) {
             abort(404);
         }
 
         $success = $this->recordRepo->categoryDelete(
             $request->get('identity'),
-            $identityRecordCategory->id
+            $recordCategoryId
         );
 
         return compact('success');

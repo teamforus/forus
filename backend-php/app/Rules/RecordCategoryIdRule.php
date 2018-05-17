@@ -2,10 +2,9 @@
 
 namespace App\Rules;
 
-use App\Repositories\Interfaces\IRecordRepo;
 use Illuminate\Contracts\Validation\Rule;
 
-class RecordTypeKeyExistsRule implements Rule
+class RecordCategoryIdRule implements Rule
 {
     /**
      * Create a new rule instance.
@@ -28,9 +27,9 @@ class RecordTypeKeyExistsRule implements Rule
     {
         $recordRepo = app()->make('forus.services.record');
 
-        return collect($recordRepo->getRecordTypes())->pluck(
-            'key'
-            )->search($value) !== false;
+        return !empty($recordRepo->categoryGet(
+            request()->get('identity'), $value
+        ));
     }
 
     /**

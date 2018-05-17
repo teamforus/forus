@@ -1,22 +1,22 @@
 <?php
 
-namespace App\Models;
+namespace App\Services\Forus\Record\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class Validator
+ * Class RecordValidation
  * @property mixed $id
- * @property integer $identity_id
- * @property string $key
- * @property string $name
- * @property Identity $identity
+ * @property integer $validator_id
+ * @property integer $record_id
+ * @property string $state
+ * @property Record $record
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @package App\Models
  */
-class Validator extends Model
+class RecordValidation extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -24,13 +24,13 @@ class Validator extends Model
      * @var array
      */
     protected $fillable = [
-        'identity_id', 'key', 'name'
+        'validator_id', 'record_id', 'state'
     ];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function identity() {
-        return $this->belongsTo(Identity::class);
+    public function record() {
+        return $this->belongsTo(Record::class);
     }
 }

@@ -1,22 +1,23 @@
 <?php
 
-namespace App\Models;
+namespace App\Services\Forus\Identity\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class Validator
+ * Class IdentityActiveType
  * @property mixed $id
- * @property integer $identity_id
- * @property string $key
- * @property string $name
+ * @property mixed $identity_id
+ * @property mixed $identity_type_id
+ * @property string $state
  * @property Identity $identity
+ * @property IdentityType $identity_type
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @package App\Models
  */
-class Validator extends Model
+class IdentityActiveType extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -24,7 +25,7 @@ class Validator extends Model
      * @var array
      */
     protected $fillable = [
-        'identity_id', 'key', 'name'
+        'identity_id', 'identity_type_id', 'state'
     ];
 
     /**
@@ -32,5 +33,12 @@ class Validator extends Model
      */
     public function identity() {
         return $this->belongsTo(Identity::class);
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function identity_type() {
+        return $this->belongsTo(IdentityType::class);
     }
 }

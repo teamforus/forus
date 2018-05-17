@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\RecordType;
+use \App\Services\Forus\Record\Models\RecordType;
 
 class RecordTypesTableSeeder extends DatabaseSeeder
 {
@@ -15,6 +15,12 @@ class RecordTypesTableSeeder extends DatabaseSeeder
             'id'        => 1,
             'key'       => 'email',
             'name'      => 'E-mail',
+        ]);
+
+        RecordType::create([
+            'id'        => 2,
+            'key'       => 'bsn',
+            'name'      => 'BSN',
         ]);
     }
 }

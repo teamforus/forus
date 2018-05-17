@@ -2,7 +2,6 @@
 
 namespace App\Http\Middleware;
 
-use App\Repositories\Interfaces\IIdentityRepo;
 use Closure;
 
 class ApiAuthMiddleware
@@ -16,16 +15,16 @@ class ApiAuthMiddleware
      */
     public function handle($request, Closure $next)
     {
-        $access_token = $request->headers->get('access_token');
+        $bearerToken = explode(' ', $request->headers->get('Authorization'));
+        $accessToken = count($bearerToken) == 2 ? $bearerToken[1] : null;
 
-        /** @var IIdentityRepo $identityRepo */
-        $identityRepo = app(IIdentityRepo::class);
+        $identityService = app()->make('forus.services.identity');
 
-        $proxyIdentityId = $identityRepo->proxyIdByAccessToken($access_token);
-        $proxyIdentityState = $identityRepo->proxyStateById($proxyIdentityId);
-        $identityId = $identityRepo->identityIdByProxyId($proxyIdentityId);
+        $proxyIdentityId = $identityService->proxyIdByAccessToken($accessToken);
+        $proxyIdentityState = $identityService->proxyStateById($proxyIdentityId);
+        $identityId = $identityService->identityIdByProxyId($proxyIdentityId);
 
-        if ($access_token && $proxyIdentityState != 'active') {
+        if ($accessToken && $proxyIdentityState != 'active') {
             switch ($proxyIdentityState) {
                 case 'pending': {
                     return response()->json([
@@ -35,7 +34,7 @@ class ApiAuthMiddleware
             }
         }
 
-        if (!$access_token || !$proxyIdentityId || !$identityId) {
+        if (!$accessToken || !$proxyIdentityId || !$identityId) {
             return response()->json([
                 "error" => 'invalid_access_token'
             ])->setStatusCode(401);

@@ -2,7 +2,8 @@
 
 namespace App\Http\Requests\Api;
 
-use App\Rules\IdentityOldPinCode;
+use App\Rules\IdentityPinCodeRule;
+use App\Rules\IdentityPinCodeOldRule;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 
@@ -29,8 +30,8 @@ class IdentityUpdatePinCodeRequest extends FormRequest
         $proxyIdentity = $request->get('proxyIdentity');
 
         return [
-            'pin_code'      => 'required',
-            'old_pin_code'  => [new IdentityOldPinCode($proxyIdentity)]
+            'pin_code'      => [new IdentityPinCodeRule()],
+            'old_pin_code'  => [new IdentityPinCodeOldRule($proxyIdentity)]
         ];
     }
 }

@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Api\Records;
 
-use App\Rules\RecordCategoryId;
+use App\Rules\RecordCategoryIdRule;
 use Illuminate\Foundation\Http\FormRequest;
 
 class RecordUpdateRequest extends FormRequest
@@ -24,9 +24,9 @@ class RecordUpdateRequest extends FormRequest
      */
     public function rules()
     {
-        $order = 'nullable|numeric|min:0';
-        $record_category_id = ['nullable', new RecordCategoryId()];
-
-        return compact('order', 'record_category_id');
+        return [
+            'order' => 'nullable|numeric|min:0',
+            'record_category_id' => ['nullable', new RecordCategoryIdRule()],
+        ];
     }
 }

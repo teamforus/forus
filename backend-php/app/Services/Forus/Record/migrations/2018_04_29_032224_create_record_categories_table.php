@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateValidatorsTable extends Migration
+class CreateRecordCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateValidatorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('validators', function (Blueprint $table) {
+        Schema::create('record_categories', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('identity_id')->unsigned();
-            $table->string('key', 20);
             $table->string('name', 20);
+            $table->integer('order')->unsigned()->default(0);
             $table->timestamps();
 
             $table->foreign('identity_id'
@@ -32,6 +32,6 @@ class CreateValidatorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('validators');
+        Schema::dropIfExists('record_categories');
     }
 }

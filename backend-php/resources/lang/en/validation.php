@@ -88,6 +88,11 @@ return [
     'uploaded'             => 'The :attribute failed to upload.',
     'url'                  => 'The :attribute format is invalid.',
 
+    // Custom
+    'old_pin_code'          => 'Old pin code don\'t match.',
+    'unknown_record_key'    => 'Unknown record key: ":key".',
+    'unique_record'         => 'The :attribute record has already been taken.',
+
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Language Lines
@@ -116,6 +121,10 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'pin_code' => "Pin code",
+        'records' => "Pin code",
+        'email' => "e-mail",
+    ],
 
 ];

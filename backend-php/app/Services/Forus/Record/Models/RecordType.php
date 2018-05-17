@@ -1,36 +1,39 @@
 <?php
 
-namespace App\Models;
+namespace App\Services\Forus\Record\Models;
 
 use Carbon\Carbon;
+use Dimsav\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class Validator
+ * Class RecordType
  * @property mixed $id
- * @property integer $identity_id
  * @property string $key
  * @property string $name
- * @property Identity $identity
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @package App\Models
  */
-class Validator extends Model
+class RecordType extends Model
 {
+    use Translatable;
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'identity_id', 'key', 'name'
+        'key'
     ];
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     * The attributes that are translatable.
+     *
+     * @var array
      */
-    public function identity() {
-        return $this->belongsTo(Identity::class);
-    }
+    public $translatedAttributes = [
+        'name'
+    ];
 }

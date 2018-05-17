@@ -4,24 +4,18 @@ namespace App\Http\Controllers\Api\Identity;
 
 use App\Http\Requests\Api\Records\RecordStoreRequest;
 use App\Http\Requests\Api\Records\RecordUpdateRequest;
-use App\Models\IdentityRecord;
-use App\Repositories\Interfaces\IRecordRepo;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class RecordController extends Controller
 {
-    /** @var IRecordRepo $recordRepo */
     private $recordRepo;
 
     /**
      * RecordCategoryController constructor.
-     * @param IRecordRepo $recordRepo
      */
-    public function __construct(
-        IRecordRepo $recordRepo
-    ) {
-        $this->recordRepo = $recordRepo;
+    public function __construct() {
+        $this->recordRepo = app()->make('forus.services.record');
     }
 
     /**
@@ -40,6 +34,7 @@ class RecordController extends Controller
      * Create new record
      * @param RecordStoreRequest $request
      * @return array|bool
+     * @throws \Exception
      */
     public function store(RecordStoreRequest $request)
     {
@@ -56,24 +51,24 @@ class RecordController extends Controller
     /**
      * Get record
      * @param Request $request
-     * @param IdentityRecord $identityRecord
+     * @param int $recordId
      * @return array
      */
     public function show(
         Request $request,
-        IdentityRecord $identityRecord
+        int $recordId
     ) {
         $identity = $request->get('identity');
 
         if (empty($this->recordRepo->recordGet(
-            $identity, $identityRecord->id
+            $identity, $recordId
         ))) {
             abort(404);
         }
 
         return $this->recordRepo->recordGet(
             $request->get('identity'),
-            $identityRecord->id
+            $recordId
         );
     }
 
@@ -81,24 +76,24 @@ class RecordController extends Controller
      * Update the specified resource in storage.
      *
      * @param  RecordUpdateRequest  $request
-     * @param  \App\Models\IdentityRecord  $identityRecord
+     * @param  int  $recordId
      * @return \Illuminate\Http\Response
      */
     public function update(
         RecordUpdateRequest $request,
-        IdentityRecord $identityRecord
+        int $recordId
     ) {
         $identity = $request->get('identity');
 
         if (empty($this->recordRepo->recordGet(
-            $identity, $identityRecord->id
+            $identity, $recordId
         ))) {
             abort(404);
         }
 
         $success = $this->recordRepo->recordUpdate(
             $request->get('identity'),
-            $identityRecord->id,
+            $recordId,
             $request->input('record_category_id', null),
             $request->input('order', null)
         );
@@ -109,25 +104,25 @@ class RecordController extends Controller
     /**
      * Delete record
      * @param Request $request
-     * @param IdentityRecord $identityRecord
+     * @param int $recordId
      * @return array
      * @throws \Exception
      */
     public function destroy(
         Request $request,
-        IdentityRecord $identityRecord
+        int $recordId
     ) {
         $identity = $request->get('identity');
 
         if (empty($this->recordRepo->recordGet(
-            $identity, $identityRecord->id
+            $identity, $recordId
         ))) {
             abort(404);
         }
 
         $success = $this->recordRepo->recordDelete(
             $request->get('identity'),
-            $identityRecord->id
+            $recordId
         );
 
         return compact('success');

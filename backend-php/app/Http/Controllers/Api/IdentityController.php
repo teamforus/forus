@@ -6,22 +6,19 @@ use App\Http\Requests\Api\IdentityAuthorizationEmailTokenRequest;
 use App\Http\Requests\Api\IdentityStoreRequest;
 use App\Http\Requests\Api\IdentityUpdatePinCodeRequest;
 use App\Models\Source;
-use App\Repositories\Interfaces\IIdentityRepo;
 use App\Http\Controllers\Controller;
-use App\Repositories\Interfaces\IRecordRepo;
 use Illuminate\Http\Request;
 
 class IdentityController extends Controller
 {
+    protected $mailerService;
     protected $identityRepo;
     protected $recordRepo;
 
-    public function __construct(
-        IIdentityRepo $identityRepo,
-        IRecordRepo $recordRepo
-    ) {
-        $this->identityRepo = $identityRepo;
-        $this->recordRepo = $recordRepo;
+    public function __construct() {
+        $this->mailerService = app()->make('forus.services.mailer');
+        $this->identityRepo = app()->make('forus.services.identity');
+        $this->recordRepo = app()->make('forus.services.record');
     }
 
     public function index() {
@@ -94,7 +91,7 @@ class IdentityController extends Controller
 
         $this->identityRepo->destroyProxyIdentity($proxyDestroy);
 
-        return response()->setStatusCode(200);
+        return response()->json([], 200);
     }
 
     /**
@@ -130,12 +127,14 @@ class IdentityController extends Controller
         if (!empty($proxy)) {
             $view = 'emails.identity.authorize-email_token';
 
-            app('mail_bus')->push($view, [
+            $this->mailerService->push($view, [
                 'email_token'   => $proxy['auth_email_token'],
                 'source'        => $source
             ], [
                 'to'            => $email,
-                'subject'       => 'Restore Identity'
+                'subject'       => trans(
+                    'identity-proxy.restore_email_subject'
+                )
             ]);
         }
 
@@ -157,11 +156,17 @@ class IdentityController extends Controller
         );
 
         if ($status === "not-found") {
-            return abort(404);
+            return abort(404, trans(
+                'identity-proxy.code.' . $status
+            ));
         } elseif ($status === "not-pending") {
-            return abort(402, "Not pending!");
+            return abort(402, trans(
+                'identity-proxy.code.' . $status
+            ));
         } elseif ($status === "expired") {
-            return abort(402, "Expired!");
+            return abort(402, trans(
+                'identity-proxy.code.' . $status
+            ));
         } elseif ($status === true) {
             return [
                 'success' => true
@@ -185,11 +190,17 @@ class IdentityController extends Controller
         );
 
         if ($status === "not-found") {
-            return abort(404);
+            return abort(404, trans(
+                'identity-proxy.code.' . $status
+            ));
         } elseif ($status === "not-pending") {
-            return abort(402, "Not pending!");
+            return abort(402, trans(
+                'identity-proxy.code.' . $status
+            ));
         } elseif ($status === "expired") {
-            return abort(402, "Expired!");
+            return abort(402, trans(
+                'identity-proxy.code.' . $status
+            ));
         } elseif ($status === true) {
             return [
                 'success' => true
@@ -213,11 +224,17 @@ class IdentityController extends Controller
         );
 
         if ($status === "not-found") {
-            return abort(404);
+            return abort(404, trans(
+                'identity-proxy.code.' . $status
+            ));
         } elseif ($status === "not-pending") {
-            return abort(402, "Not pending!");
+            return abort(402, trans(
+                'identity-proxy.code.' . $status
+            ));
         } elseif ($status === "expired") {
-            return abort(402, "Expired!");
+            return abort(402, trans(
+                'identity-proxy.code.' . $status
+            ));
         } elseif ($status === true) {
             $source = Source::getModel()->where([
                 'key' => $source
@@ -227,9 +244,9 @@ class IdentityController extends Controller
                 return redirect($source->url);
             }
 
-            return "Success!";
+            return trans('identity-proxy.email.success');
         }
 
-        return "Error!";
+        return trans('identity-proxy.email.error');
     }
 }

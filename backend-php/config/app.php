@@ -181,8 +181,15 @@ return [
         Dimsav\Translatable\TranslatableServiceProvider::class,
 
         App\Services\TokenGeneratorService\UUIDGeneratorServiceProvider::class,
-        App\Services\MailBus\MailBusProvider::class,
 
+
+        /*
+         * Forus Service Providers
+         */
+
+        App\Services\Forus\Mailer\MailerServiceProvider::class,
+        App\Services\Forus\Identity\IdentityServiceProvider::class,
+        App\Services\Forus\Record\RecordServiceProvider::class,
 
     ],
 
@@ -232,6 +239,13 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        /*
+         * Forus services
+         */
+        'MailerService' => \App\Services\Mailer\Facades\MailerService::class,
+        'IdentityService' => \App\Services\Forus\Identity\Facades\IdentityService::class,
+        'RecordService' => \App\Services\Forus\Record\Facades\RecordService::class,
 
     ],
 

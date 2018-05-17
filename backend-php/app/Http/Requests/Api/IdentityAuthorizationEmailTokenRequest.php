@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests\Api;
 
-use App\Rules\IdentityRecordsExists;
+use App\Rules\IdentityRecordsExistsRule;
 use Illuminate\Foundation\Http\FormRequest;
 
 class IdentityAuthorizationEmailTokenRequest extends FormRequest
@@ -25,7 +25,7 @@ class IdentityAuthorizationEmailTokenRequest extends FormRequest
     public function rules()
     {
         return [
-            'email'     => ['required', new IdentityRecordsExists('email')],
+            'email'     => ['required', new IdentityRecordsExistsRule('email')],
             'source'    => 'required|exists:sources,key'
         ];
     }

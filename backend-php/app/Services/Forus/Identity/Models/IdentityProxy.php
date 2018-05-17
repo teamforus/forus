@@ -1,22 +1,26 @@
 <?php
 
-namespace App\Models;
+namespace App\Services\Forus\Identity\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class Validator
+ * Class IdentityProxy
  * @property mixed $id
  * @property integer $identity_id
- * @property string $key
- * @property string $name
+ * @property string $access_token
+ * @property string $auth_token
+ * @property string $auth_code
+ * @property string $auth_email_token
+ * @property string $state
+ * @property integer $expires_in
  * @property Identity $identity
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @package App\Models
  */
-class Validator extends Model
+class IdentityProxy extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -24,7 +28,8 @@ class Validator extends Model
      * @var array
      */
     protected $fillable = [
-        'identity_id', 'key', 'name'
+        'identity_id', 'access_token', 'auth_token', 'auth_code',
+        'auth_email_token', 'state', 'expires_in'
     ];
 
     /**

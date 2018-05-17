@@ -5,16 +5,22 @@ namespace App\Rules;
 use App\Repositories\Interfaces\IRecordRepo;
 use Illuminate\Contracts\Validation\Rule;
 
-class RecordTypeKeyExistsRule implements Rule
+class IdentityRecordsUniqueRule implements Rule
 {
+    private $recordType;
+    private $recordRepo;
+
     /**
      * Create a new rule instance.
      *
+     * @param string $recordType
      * @return void
      */
-    public function __construct()
-    {
-        //
+    public function __construct(
+        $recordType
+    ) {
+        $this->recordType = $recordType;
+        $this->recordRepo = app()->make('forus.services.record');
     }
 
     /**
@@ -23,14 +29,11 @@ class RecordTypeKeyExistsRule implements Rule
      * @param  string  $attribute
      * @param  mixed  $value
      * @return bool
+     * @throws \Exception
      */
     public function passes($attribute, $value)
     {
-        $recordRepo = app()->make('forus.services.record');
-
-        return collect($recordRepo->getRecordTypes())->pluck(
-            'key'
-            )->search($value) !== false;
+        return $this->recordRepo->isRecordUnique($this->recordType, $value);
     }
 
     /**
@@ -40,6 +43,8 @@ class RecordTypeKeyExistsRule implements Rule
      */
     public function message()
     {
-        return trans('validation.exists');
+        return trans('validation.unique_record', [
+            'attribute' => trans('validation.attributes.' . $this->recordType)
+        ]);
     }
 }
