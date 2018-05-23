@@ -445,10 +445,7 @@ class RecordRepo implements IRecordRepo
         $order = null
     ) {
         $update = collect();
-
-        if (is_numeric($recordCategoryId)) {
-            $update->put('record_category_id', $recordCategoryId);
-        }
+        $update->put('record_category_id', $recordCategoryId);
 
         if (is_numeric($order)) {
             $update->put('order', $order);

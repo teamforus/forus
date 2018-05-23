@@ -62,7 +62,7 @@ class RecordCategoryController extends Controller
         if (empty($this->recordRepo->categoryGet(
             $identity, $recordCategoryId
         ))) {
-            abort(404);
+            abort(404, trans('record-categories.codes.404'));
         }
 
         $category = $this->recordRepo->categoryGet(
@@ -71,7 +71,7 @@ class RecordCategoryController extends Controller
         );
 
         if (!$category) {
-            return abort(404);
+            abort(404, trans('record-categories.codes.404'));
         }
 
         return $category;
@@ -92,7 +92,7 @@ class RecordCategoryController extends Controller
         if (empty($this->recordRepo->categoryGet(
             $identity, $recordCategoryId
         ))) {
-            abort(404);
+            abort(404, trans('record-categories.codes.404'));
         }
 
         $success = $this->recordRepo->categoryUpdate(
@@ -121,7 +121,7 @@ class RecordCategoryController extends Controller
         if (empty($this->recordRepo->categoryGet(
             $identity, $recordCategoryId
         ))) {
-            abort(404);
+            abort(404, trans('record-categories.codes.404'));
         }
 
         $success = $this->recordRepo->categoryDelete(

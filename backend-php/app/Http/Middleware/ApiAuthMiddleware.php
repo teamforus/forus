@@ -28,7 +28,7 @@ class ApiAuthMiddleware
             switch ($proxyIdentityState) {
                 case 'pending': {
                     return response()->json([
-                        "error" => 'proxy_identity_pending'
+                        "message" => 'proxy_identity_pending'
                     ])->setStatusCode(401);
                 } break;
             }
@@ -36,7 +36,7 @@ class ApiAuthMiddleware
 
         if (!$accessToken || !$proxyIdentityId || !$identityId) {
             return response()->json([
-                "error" => 'invalid_access_token'
+                "message" => 'invalid_access_token'
             ])->setStatusCode(401);
         }
 

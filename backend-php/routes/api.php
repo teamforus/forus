@@ -50,9 +50,9 @@ Route::group(['namespace' => 'Api', 'middleware' => ['api.auth']], function() {
         Route::group(['prefix' => '/record-categories'], function() {
             Route::get('/', 'Identity\RecordCategoryController@index');
             Route::post('/', 'Identity\RecordCategoryController@store');
-            Route::put('/sort', 'Identity\RecordCategoryController@sort');
+            Route::patch('/sort', 'Identity\RecordCategoryController@sort');
             Route::get('/{recordCategoryId}', 'Identity\RecordCategoryController@show');
-            Route::put('/{recordCategoryId}', 'Identity\RecordCategoryController@update');
+            Route::patch('/{recordCategoryId}', 'Identity\RecordCategoryController@update');
             Route::delete('/{recordCategoryId}', 'Identity\RecordCategoryController@destroy');
         });
 
@@ -63,9 +63,9 @@ Route::group(['namespace' => 'Api', 'middleware' => ['api.auth']], function() {
             Route::get('/', 'Identity\RecordController@index');
             Route::post('/', 'Identity\RecordController@store');
             Route::get('/types', 'Identity\RecordController@typeKeys');
-            Route::put('/sort', 'Identity\RecordController@sort');
+            Route::patch('/sort', 'Identity\RecordController@sort');
             Route::get('/{recordId}', 'Identity\RecordController@show');
-            Route::put('/{recordId}', 'Identity\RecordController@update');
+            Route::patch('/{recordId}', 'Identity\RecordController@update');
             Route::delete('/{recordId}', 'Identity\RecordController@destroy');
         });
     });

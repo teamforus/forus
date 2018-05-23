@@ -63,7 +63,7 @@ class RecordController extends Controller
         if (empty($this->recordRepo->recordGet(
             $identity, $recordId
         ))) {
-            abort(404);
+            abort(404, trans('records.codes.404'));
         }
 
         return $this->recordRepo->recordGet(
@@ -88,7 +88,7 @@ class RecordController extends Controller
         if (empty($this->recordRepo->recordGet(
             $identity, $recordId
         ))) {
-            abort(404);
+            abort(404, trans('records.codes.404'));
         }
 
         $success = $this->recordRepo->recordUpdate(
@@ -117,7 +117,7 @@ class RecordController extends Controller
         if (empty($this->recordRepo->recordGet(
             $identity, $recordId
         ))) {
-            abort(404);
+            abort(404, trans('records.codes.404'));
         }
 
         $success = $this->recordRepo->recordDelete(

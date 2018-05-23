@@ -3,20 +3,20 @@
 return [
     'restore_email_subject' => 'Restore Identity',
     'token'  => [
-        'not-pending' => 'Not pending!',
-        'expired' => 'Not pending!',
-        'not-found' => 'Not found!',
+        'not-pending' => 'Not pending.',
+        'expired' => 'Expired.',
+        'not-found' => 'Not found.',
     ],
     'code'  => [
-        'not-pending' => 'Not pending!',
-        'expired' => 'Not pending!',
-        'not-found' => 'Not found!',
+        'not-pending' => 'Not pending.',
+        'expired' => 'Expired.',
+        'not-found' => 'Not found.',
     ],
     'email'  => [
-        'not-pending' => 'Not pending!',
-        'expired' => 'Not pending!',
-        'not-found' => 'Not found!',
-        'success' => 'Success!',
-        'error' => 'Error!',
+        'not-pending' => 'Not pending.',
+        'expired' => 'Expired.',
+        'not-found' => 'Not found.',
+        'success' => 'Success.',
+        'error' => 'Error.',
     ],
 ];
