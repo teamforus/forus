@@ -123,7 +123,7 @@ return [
 
     'attributes' => [
         'pin_code' => "Pin code",
-        'records' => "Pin code",
+        'records' => "Records",
         'email' => "e-mail",
     ],
 
