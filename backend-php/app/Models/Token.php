@@ -13,6 +13,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $key
  * @property string $abbr
  * @property string $name
+ * @property String $address
  * @property Fund $fund
  * @property Carbon $created_at
  * @property Carbon $updated_at
@@ -28,7 +29,7 @@ class Token extends Model
      * @var array
      */
     protected $fillable = [
-        'fund_id', 'key'
+        'fund_id', 'key', 'address'
     ];
 
     /**

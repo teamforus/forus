@@ -17,6 +17,7 @@ class CreateTokensTable extends Migration
             $table->increments('id');
             $table->integer('fund_id')->unsigned();
             $table->string('key', 20);
+            $table->string('address', 42)->nullable();
             $table->timestamps();
 
             $table->foreign('fund_id'

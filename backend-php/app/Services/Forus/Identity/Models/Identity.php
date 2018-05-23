@@ -13,6 +13,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $type
  * @property Collection $types
  * @property Collection $proxies
+ * @property String $address
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @package App\Models
@@ -25,7 +26,7 @@ class Identity extends Model
      * @var array
      */
     protected $fillable = [
-        'pin_code', 'type'
+        'pin_code', 'type', 'address'
     ];
 
     /**

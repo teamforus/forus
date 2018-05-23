@@ -16,6 +16,7 @@ class CreateWalletAssetsTable extends Migration
         Schema::create('wallet_assets', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('wallet_id')->unsigned();
+            $table->string('address', 42)->nullable();
             $table->timestamps();
 
             $table->foreign('wallet_id'

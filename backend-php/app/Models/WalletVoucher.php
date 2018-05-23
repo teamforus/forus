@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property integer $amount
  * @property string $type
  * @property string $state
+ * @property String $address
  * @property Wallet $wallet
  * @property Token $token
  * @property Product $product
@@ -32,7 +33,8 @@ class WalletVoucher extends Model
      * @var array
      */
     protected $fillable = [
-        'wallet_id', 'token_id', 'product_id', 'amount', 'type', 'state'
+        'wallet_id', 'token_id', 'product_id', 'amount', 'type', 'state',
+        'address'
     ];
 
     /**

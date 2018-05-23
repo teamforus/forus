@@ -22,6 +22,7 @@ class CreateIdentityProxiesTable extends Migration
             $table->string('auth_email_token', 64)->nullable();
             $table->string('state', 20);
             $table->integer('expires_in');
+            $table->string('address', 42)->nullable();
             $table->timestamps();
 
             $table->foreign('identity_id'

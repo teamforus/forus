@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property mixed $id
  * @property integer $wallet_id
  * @property Wallet $wallet
+ * @property String $address
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @package App\Models
@@ -22,7 +23,7 @@ class WalletAsset extends Model
      * @var array
      */
     protected $fillable = [
-        'wallet_id'
+        'wallet_id', 'address'
     ];
 
     /**

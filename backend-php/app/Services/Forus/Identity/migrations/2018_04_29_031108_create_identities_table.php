@@ -17,6 +17,7 @@ class CreateIdentitiesTable extends Migration
             $table->increments('id');
             $table->string('pin_code')->nullable();
             $table->string('type');
+            $table->string('address', 42)->nullable();
             $table->timestamps();
         });
     }

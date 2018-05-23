@@ -21,6 +21,7 @@ class CreateWalletVouchersTable extends Migration
             $table->integer('amount')->unsigned();
             $table->string('type', 20);
             $table->string('state', 20);
+            $table->string('address', 42)->nullable();
             $table->timestamps();
 
             $table->foreign('wallet_id'

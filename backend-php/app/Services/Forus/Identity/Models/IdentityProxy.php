@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $auth_code
  * @property string $auth_email_token
  * @property string $state
+ * @property String $address
  * @property integer $expires_in
  * @property Identity $identity
  * @property Carbon $created_at
@@ -29,7 +30,7 @@ class IdentityProxy extends Model
      */
     protected $fillable = [
         'identity_id', 'access_token', 'auth_token', 'auth_code',
-        'auth_email_token', 'state', 'expires_in'
+        'auth_email_token', 'state', 'expires_in', 'address'
     ];
 
     /**
