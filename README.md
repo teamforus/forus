@@ -5,6 +5,8 @@
 
 **note:** work in progress, beware of the dragons 🐉 
 
+**This repository is maintained by:** [@danrminds](https://github.com/danrminds)
+
 ### [Read the docs ➡️](docs/README.md)
 
 
