@@ -1,4 +1,58 @@
-## FAQ
+# FAQ
+
+## Top 10 most asked
+
+1. Why a foundation?
+
+2. Can I contribute?
+
+3. Will you speak at my event?
+
+4. Where can I find more information about Kindpakket/Forus/Me?
+
+5. What is your goal?
+
+6. How can I implement your products?
+
+7. Why open-source?
+
+8. What is your bussines model?
+
+9. What is your roadmap?
+
+10. Why blockchain?
+
+## Foundation
+
+What is a stichting?
+
+Why are you incorporated under the legal form of foundation?
+
+Where is the foundation located?
+
+Who works for the foundation?
+
+## Our policies
+
+### Development
+
+Why open-source?
+
+Which programming languages are you using?
+
+### HR
+
+Can I work for your team?
+
+## Products and services
+
+### Me
+
+### Forus
+
+### Kindpakket
+
+Where can I find more information about Kindpakket?
 
 What is the purpose for blockchain within the use case of Kindpakket?
 
@@ -30,6 +84,12 @@ Yes. Kindpakket 1.0 is build upon a traditional infrastructure (PHP/MySQL). It m
 
 #### What is the Me app and is it a self sovereign identity?
 No. The Me app is currently just a concept. This concept saw his first light at the field lab “common grounds” of the association of dutch municipalities in the form of a live demo. The Me app in its concept is cryptowallet and a DID (decentralized identifier) store. We are currently developing a first version of the Me app. The current use case we have is that we want to store the kindpakket voucher in this app and we want that the shopkeeper of zuidhorn can substract euro’s from these vouchers with the same app. In the vision the Me app will be a self sovereign identity, currently its not.
+
+### Implementations
+
+## Legal
+
+## Media & Communication
 
 
 
