@@ -1,13 +1,10 @@
+**This repository is maintained by:** [@jamalv](https://github.com/jamalv)
+
 [![join our chat](https://img.shields.io/badge/join%20chat-research--and--development-green.svg)](https://chat.forus.io/channel/research-and-development)
-## Research-and-development
 
-Our vision is to develop decentralized applications for the public domain. We started a foundation to give this vision more concrete goals. A goal for us was doing a feasibility study towards our concept of a decentralized platform. This feasibility study was written down in context of a Small Business Inovation Research (SBIR). A SBIR is innovation in commission set out by the Ministery of Economic Affairs. This process taught us alot, currently our R&D phase is over and we are working on building a prototype of our platform using four decentralized roles: sponsor, provider, requester and validator. There is still alot to research though. ;)
+## Goal
 
-Research and development towards complete decentralization is alot of work. We invite anybody into this proces and share their results.
-
-## Goal of our research and development repostitory
-
-The goal of the [research-and-development repository](https://github.com/teamforus/research-and-development) is to learn and share knowledge around decentralized development. We are researching, creating and improving the building blocks of [Platform Forus](https://foundation.forus.io/en/platform/) and any other fully decentralized platform/application.
+The goal of this repository is to learn and share knowledge around decentralized development. We are researching, creating and improving the building blocks of [Platform Forus](https://foundation.forus.io/en/platform/) and any other fully decentralized platform/application.
 
 ## Getting started
 

@@ -1,0 +1,61 @@
+-
+  name: Forus
+  icon: cog
+  description: Platform for the conditional exchange of value. 
+  path: en/forus
+  pages:
+    Why Forus: /#why-we-are-making-forus
+    What is Forus: /#what-is-forus
+    Main interaction: /#the-main-interaction
+    Example use case: /#example-case-of-an-implementation-of-forus
+    Roadmap: /#roadmap
+
+-
+  name: Me
+  icon: cog
+  description: an app for managing identity, assets and records
+  path: en/me
+  pages:
+    Why Me: /#why-build-me
+    What Me will do: /#what-me-will-do
+    Wallet: /#1-wallet
+    Identity: /#3-identity
+    Roadmap: /#digital-identity-roadmap
+
+-
+  name: Me Android
+  icon: android
+  description: Native Android implementation of the me app
+  path: https://github.com/teamforus/me-android
+
+-
+  name: Me iOS
+  icon: apple
+  description: iOS implementation of the me app
+  path: https://github.com/teamforus/me-ios/
+
+-
+  name: Research and development
+  icon: code
+  description: We are researching, creating and improving the building blocks of Platform Forus.
+  path: https://github.com/teamforus/research-and-development
+
+
+-
+  name: Foundation
+  icon: support
+  description: The Forus Foundation has the ambition to develop decentalized applications for the public domain.
+  path: en/foundation/
+  pages:
+    Vision: vision/
+
+-
+  name: Knowledge base
+  icon: github
+  description: Questions & Answers
+  path: en/knowledge-base/
+  pages:
+    Glossary: glossary/
+    FAQ: faq/
+    Contribution manual: contributing/contribution-manual
+

@@ -1,9 +1,5 @@
 [![join chat](https://img.shields.io/badge/join%20chat-me-green.svg)](https://chat.forus.io/channel/me)
 
-**note:** work in progress, beware of the fairies 
-
-**This repository is maintained by:** [@jknnr](https://github.com/jknnr)
-
 # me: an app for managing identity, assets and records  
 
 ### why build me?
@@ -49,13 +45,13 @@ By using the QR code scanner you can:
 | 0.1.0 | Digital identity | The first real-world application of the me app is currently being worked on. It is to be launched together with forus v0.1.0. Initialy the feature set will be focussed on providing the right funcionality to operate together with [kindpakket](). We will use it to learn how the application behaves in the real world, and use these lessons for future development. <br><br> The main focus is to learn how to provide maximum value to real-world users.
 | 1.0.0 | Self sovereign identity | The full vision of the me app is to be a fully self-sovereign identity. Meaning that you own your data and keys, and there is no centralized party involved. Just like with forus this is a vision that required time and dedication
 
-### Digital identity
+### Digital identity roadmap
 
 | Aim Date | Identification | Wallet | Records |
 | --- | --- | --- | --- |
-| 1 Sept | Can log in to forus | Can have kindpakket voucher, <br>Optional bonus: can have ether | POC: records for kindpakket ZH |
-| 1 Jan | | | |
-| 1 Apr | | ERC721 support, land plots | |
+| 1 Sept | Can log in to forus | Can have kindpakket voucher | POC: records for kindpakket ZH |
+| 1 Jan |  | Ether in wallet | Validation dashboard for validators |
+| 1 Apr |  | ERC721 support, land plots | p2p validations |
 
 Wishlist:
 
@@ -76,3 +72,5 @@ As much as possible, we are trying to implement open standards that are embraced
 The me app will support three main groups of functionality: a wallet for the things you own, your personal records and a way to identify and interact with third parties (applications, people or organisations)
 
 <img width="537" alt="screen shot 2018-06-20 at 13 18 23" src="https://user-images.githubusercontent.com/30194799/41655199-71a66c18-748c-11e8-81ff-2d49e51175f1.png">
+
+**This repository is maintained by:** [@jknnr](https://github.com/jknnr)
