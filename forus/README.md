@@ -1,21 +1,17 @@
 [![join chat](https://img.shields.io/badge/join%20chat-forus-green.svg)](https://chat.forus.io/channel/forus)
 
+Maintainer | [@danrminds](https://github.com/danrminds)
+--- | ---
+
 # Readme
-
-**note:** work in progress, beware of the dragons 🐉 
-
-**This repository is maintained by:** [@danrminds](https://github.com/danrminds)
-
-### [Read the docs ➡️](docs/README.md)
-
-### Why we are making forus
+## Why we are making forus
 
 It is currently a very cumbersome process to make resources end up with a target audience. For the sponsor it is hard to find the target audience and spread awareness about the availability of the funds. When recieving a request, it is hard to validate that the requesting party is eligible to recieve the grant. The flow of payments is a very administrative process. For the requesting party this situation is not any better. They usually don't know what they are eligle for, and the application process is usually very labor intensive. Providers also have to do a lot of administration, often working with vouchers or invoice requests.
 
 By applying modern-day technology and human-centered experience design, it is possible to make great steps in improving this process.
 
 
-### What is forus?
+## What is forus?
 
 Forus is a platform for the conditional exchange of value. The platform knows four generic actors:
 
@@ -37,7 +33,7 @@ To check if the citizen meets these criteria a doctor (validator) can be chosen 
 
 The actual assistance is provided in hospital (provider).
 
-### Roadmap
+## Roadmap
 
 | # | Title | Discription |
 | --- | --- | --- |
