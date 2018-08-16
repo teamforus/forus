@@ -23,18 +23,6 @@
     Roadmap: /#digital-identity-roadmap
 
 -
-  name: Me Android
-  icon: android
-  description: Native Android implementation of the me app
-  path: https://github.com/teamforus/me-android
-
--
-  name: Me iOS
-  icon: apple
-  description: iOS implementation of the me app
-  path: https://github.com/teamforus/me-ios/
-
--
   name: Research and development
   icon: code
   description: We are researching, creating and improving the building blocks of Platform Forus.
@@ -58,4 +46,12 @@
     Glossary: glossary/
     FAQ: faq/
     Contribution manual: contributing/contribution-manual
+    
+  
+-
+  name: Implementation
+  icon: cog
+  description: Implementation guides of Forus & Me
+  path: en/implementation/
+  pages:
 
