@@ -14,6 +14,7 @@ Important and lasting beliefs or ideals shared by the members of a culture about
 8. Decentralize where possible
 9. Collaborate
 10. No fake news
+11. Look for ways to create value (intrepreneurship)
 
 
 
