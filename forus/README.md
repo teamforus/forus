@@ -51,19 +51,6 @@ We are working together with our partners to extend and test the functionality o
 | 1 Sept | There will be one fund (kindpakket) with criteria set by the municipality of Zuidhorn.  | Zuidhorn will use a CSV Upload tool to select the target audience and generate vouchers/activation codes. | Shopkeepers can register, apply to the fund and do special offers. | The requester will recieve an activation code for their voucher. |
 | 1 Jan | The barrier to sponsorship (opening and connecting a bunq account) will be removed and it should be possible for anybody to sponsor a fund. | Zuidhorn becomes westerkwartier, where DigiD will be an identity validator trough Forus. | It becomes possible to add funds to a level more concrete then funds e.g. sponsoring the catagory sports within kindpakket. | Requesters can apply based on their personal records.
 
-<!---
-| 1 Apr | Lungfund becomes a sponsor, leveraging kindpakket to fulfill their mission of a <br> ["smokefree generation"](https://rookvrijegeneratie.nl) | Add peer-to-peer validation of smoking. E.g. volunteers, doctors etc. | It becomes possible to set up a fund for a specific offer, e.g. nicotine patches | Requester can apply for vouchers for specific products.
--->
-
-Wishlist:
-
-Sponsor | Validator | Provider | Requester |
-| --- | --- | --- | --- |
-| Flexible/Configurable criteria |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-
 ### Technical decentralisation
 
 The vision of Forus is to be technically decentralized. This means the core interactions between the four actors in the platform are not performed on the infrastructure of Foundation Forus anymore, but on a decentralized backend / blockchain. This ensures that there is not a central party taxing or influencing this interaction.
