@@ -1,1 +1,0 @@
-Developent strategy

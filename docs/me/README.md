@@ -40,9 +40,9 @@ Records in this context are things that say something about you, but that hold n
 
 By using the QR code scanner you can: 
 
-* Log in to DAPPs / expose your identity
-* Exchange value: image 1.1 is an example of the screen after scanning a voucher.
-* Validate information (properties) image 1.2 is an example of the screen after scanning a validation request as in image 2.1.
+* Log in / expose your identity
+* Exchange value.
+* Validate information.
 
 ## Roadmap
 
@@ -59,14 +59,6 @@ By using the QR code scanner you can:
 | 1 Sept | Can log in to forus | Can have kindpakket voucher | POC: records for kindpakket ZH |
 | 1 Jan |  | Ether in wallet | Validation dashboard for validators |
 | 1 Apr |  | ERC721 support, land plots | p2p validations |
-
-Wishlist:
-
-| Identity | 
-| --- |
-| Login SDK / OAUTH |
-| |
-| |
 
 
 ### Self sovereign identity
