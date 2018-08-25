@@ -6,7 +6,7 @@ Maintainer | [@danrminds](https://github.com/danrminds)
 # Readme
 ## Why we are making forus
 
-It is currently a very cumbersome process to make resources end up with a target audience. For the sponsor it is hard to find the target audience and spread awareness about the availability of the funds. When recieving a request, it is hard to validate that the requesting party is eligible to recieve the grant. The flow of payments is a very administrative process. For the requesting party this situation is not any better. They usually don't know what they are eligle for, and the application process is usually very labor intensive. Providers also have to do a lot of administration, often working with vouchers or invoice requests.
+It is currently a very cumbersome process to make resources end up with a target audience. For the sponsor it is hard to find the target audience and spread awareness about the availability of the funds. When receiving a request, it is hard to validate that the requesting party is eligible to recieve the grant. The flow of payments is a very administrative process. For the requesting party this situation is not any better. They usually don't know what they are eligible for, and the application process is usually very labor intensive. Providers also have to do a lot of administration, often working with vouchers or invoice requests.
 
 By applying modern-day technology and human-centered experience design, it is possible to make great steps in improving this process.
 
