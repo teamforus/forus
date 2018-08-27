@@ -55,7 +55,5 @@
   description: Questions & Answers
   path: en/knowledge-base/
   pages:
-    Glossary: glossary/
-    FAQ: faq/
     Contribution manual: contributing/contribution-manual
 
