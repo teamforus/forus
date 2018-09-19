@@ -1,0 +1,49 @@
+-
+  name: Forus
+  icon: cog
+  description: Een platform om waarde uit te wisselen voor het publieke domein
+  path: forus
+  pages:
+    Why Forus: /#why-we-are-making-forus
+    What is Forus: /#what-is-forus
+    Main interaction: /#the-main-interaction
+    Example use case: /#example-case-of-an-implementation-of-forus
+    Roadmap: /#roadmap
+
+-
+  name: Me
+  icon: cog
+  description: Een app om een digitale identiteit te beheren.
+  path: me
+  pages:
+    Why Me: /#why-build-me
+    What Me will do: /#what-me-will-do
+    Wallet: /#1-wallet
+    Identity: /#3-identity
+    Roadmap: /#digital-identity-roadmap
+
+-
+  name: Onderzoek en development
+  icon: code
+  description: We onderzoeken, ontwerpen en bouwen een gedecentraliseerde versie van het Forus platform
+  path: https://github.com/teamforus/research-and-development
+
+
+-
+  name: Stichting
+  icon: support
+  description: De stichting heeft de ambitie om decentrale applicaties te bouwen voor het publieke domein
+  path: foundation/
+  pages:
+    Vision: vision/
+
+-
+  name: Kennisbank
+  icon: github
+  description: Vraag & antwoord, blogs en handleidingen
+  path: knowledge-base/
+  pages:
+    Glossary: glossary/
+    FAQ: faq/
+    Contribution manual: contributing/contribution-manual
+
