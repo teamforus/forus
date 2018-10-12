@@ -4,3 +4,9 @@
 [submodule "backend-php"]
 	path = backend-php
 	url = https://github.com/teamforus/services.forus.io-php.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/teamforus/forus-backend
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/teamforus/forus-frontend
