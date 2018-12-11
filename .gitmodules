@@ -10,3 +10,6 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/teamforus/forus-frontend
+[submodule "notification"]
+	path = notification
+	url = https://www.github.com/teamforus/forus-notification.git
