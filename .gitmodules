@@ -13,3 +13,6 @@
 [submodule "notification"]
 	path = notification
 	url = https://www.github.com/teamforus/forus-notification.git
+[submodule "laradock"]
+	path = laradock
+	url = https://github.com/Laradock/laradock.git
