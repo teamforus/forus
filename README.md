@@ -62,3 +62,7 @@ To reach the milestone of full technical decentralisation is a long road that is
 
 We are constantly doing R&D to learn what the status of decentralized technology is and to see if we can make real steps into technically decentralizing the system.
 
+## Tools we use, credits
+| Tool | Credit | 
+| --- | --- |
+| <img src="https://www.browserstack.com/images/layout/browserstack-logo-600x315.png" width="400" /> | Browserstack helps Forus instantly test regressions, reproduce bugs and ensure compatibility. It enables the best browser support. Without it, reproducing and resolving bugs would be much harder. New bugs could be introduced during development without us noticing. We use it everyday! |
