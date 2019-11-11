@@ -65,4 +65,4 @@ We are constantly doing R&D to learn what the status of decentralized technology
 ## Tools we use, credits
 | Tool | Credit | 
 | --- | --- |
-| <img src="https://www.browserstack.com/images/layout/browserstack-logo-600x315.png" width="400" /> | Browserstack helps Forus instantly test regressions, reproduce bugs and ensure compatibility. It enables the best browser support. Without it, reproducing and resolving bugs would be much harder. New bugs could be introduced during development without us noticing. We use it everyday! |
+| <a href="https://browserstack.com" target="_blank" ><img src="https://www.browserstack.com/images/layout/browserstack-logo-600x315.png" width="400" /></a> | [Browserstack](https://browserstack.com) helps Forus instantly test regressions, reproduce bugs and ensure compatibility. It enables the best browser support. Without it, reproducing and resolving bugs would be much harder. New bugs could be introduced during development without us noticing. We use it everyday! |
