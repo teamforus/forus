@@ -1,0 +1,4 @@
+contact_links:
+- name: Change request
+  url: https://github.com/teamforus/general/issues/new?assignees=jamalv&labels=Approval%3A+Pending%2C+Status%3A+Not+Planned%2C+Type%3A+Change+request&template=change-request.md&title=CR%3A
+  about: Template to create a change request.
