@@ -4,6 +4,9 @@ Maintainer | [@maxvisser](https://github.com/maxvisser)
 # Introduction
 Forus is a platform that brings together sponsors, providers and applicants. The sponsor makes funds available to the applicant. The applicant applies to a fund and waits for approval. As soon as the validator agrees, the applicant will receive a voucher. He or she can redeem this voucher at a participating provider. The transaction goes through the [Me app](https://github.com/teamforus/me).
 
+## Getting started
+* [General readme](https://github.com/teamforus/general/blob/master/README.md)
+
 ## Tools we use, credits
 | Tool | Credit | 
 | --- | --- |
